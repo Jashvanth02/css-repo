@@ -1,51 +1,112 @@
- /* menu.css */
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
+.nav{
+    /* border: 2px solid red; */
+    margin-left: 20px;
+    margin-right: 20px;
+    
 }
-
-.container {
-    display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
-    max-width: 100%;
-    overflow-x: auto; /* Enable scrolling if content overflows */
+.nav img{
+    width: 40px;
 }
-
-.container > div {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px; /* Fixed width to fit 3 in a row */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.nav h3{
+    display: inline-block;
+    padding-left: 650px;
 }
-
-.container > div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+.container2{
+    /* border: 2px solid black; */
+    margin-top: 10px;
+    padding-left: 60px;
+    /* margin-bottom: 20px; */
 }
-
-.container img {
+.item1{
+    display: inline-block;
+    width: 300px;
+    margin-left: 30px;
+    /* border: 2px solid red; */
+     
+}
+.item1 img{
     width: 100%;
-    height: auto;
-    display: block;
+     
+
+}
+.container{
+    /* border: 2px solid blue; */
+    margin-top: 10px;
+    padding-left: 60px;
+    margin-bottom: 80px;
+    
+
+}
+.item{
+    display: inline-block;
+    /* border: 2px solid red; */
+    width: 300px;
+   margin-left: 30px;
+   
+}
+.item img{
+    width: 100%;
+      
+}
+.item2{
+    margin-left: 350px;
+}
+.item2 h3{
+    margin-left: 300px;
+}
+.item2 p{
+    margin-left: 250px;
+}
+.p1{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+}
+/* .container3{
+    border: 2px solid red;
+}
+.item3{
+    display: inline-block;
+    margin-top: 10px;
+}
+.item3 img,p{
+    display: inline-block;
+
+}
+.item3 img{
+    width: 40px;
+} */
+
+/* Existing styles */
+.container3 {
+    /* border: 2px solid red; */
+    display: flex;                
+    padding: 20px;
+    gap: 20px;
 }
 
-.container h3 {
-    margin: 15px;
-    font-size: 1.2rem;
-    color: #333;
+.item3 {
+    display: inline-block;
+    margin-top: 10px;
+    flex: 1; 
+}                     
+
+.item3 img, 
+.item3 p {
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.container p {
-    margin: 0 15px 15px;
-    font-size: 0.95rem;
-    color: #666;
-    line-height: 1.4;
+.item3 img {
+    width: 40px;
+     
 }
+
+
+.item3 h3, 
+.item3 h4 {
+    display: inline-block;
+    margin-right: 100px;
+    /* font-size: 1.2rem; */
+}
+
