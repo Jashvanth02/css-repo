@@ -1,0 +1,52 @@
+ .container1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;  
+    background-color: white;
+     
+     
+}
+.item1, .item2 {
+    display: inline-block;
+    position: relative;
+    background-color: white; 
+     
+}
+
+.item2 {
+    margin-left: 1000px;
+    padding-left: 40px;
+}
+
+.item2 h3 {
+    display: inline-block;
+    padding-left: 20px;
+    
+     
+}
+
+.container2 {
+    position: relative;
+}
+
+.item4 {
+    position: absolute;
+    top: 350px;
+    left: 600px;
+    z-index: 5;  
+}
+
+.item4 h3 {
+    color: aliceblue;
+    font-size: 42px;  
+}
+
+.item4 span {
+    background-color: black;
+    
+    font-size: 62px;  
+}
+
+ 
