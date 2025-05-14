@@ -65,10 +65,6 @@ h2 {
     transition: background-color 0.2s ease;
 }
 
-.item1:hover, .item4:hover, .item5:hover, .item6:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
  
 .chat-wrapper {
     overflow-y: auto;
@@ -80,9 +76,6 @@ h2 {
     -ms-overflow-style: none;   
 }
 
-.chat-wrapper::-webkit-scrollbar {
-    display: none;   
-}
 
 .chat {
     display: flex;
@@ -99,7 +92,11 @@ h2 {
     color: #fbf6f6;
     font-size: 13px;
     z-index: 5;
-    background-color: transparent;
+    background-color: gray;
+    border: 2px solid black;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 10px;
 }
 
  
@@ -124,11 +121,7 @@ h2 {
     margin-right: auto;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
+ 
  
 .footer {
     position: absolute;
@@ -159,12 +152,7 @@ h2 {
     transition: transform 0.2s;
 }
 
-/* .footer .emoji:hover,
-.footer .files:hover,
-.footer .cam:hover,
-.footer .voice:hover {
-    transform: scale(1.1);
-} */
+ 
 
 .footer .message input {
     flex-grow: 1;
