@@ -1,0 +1,74 @@
+ .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 400px;
+}
+
+ .container .dot{
+    height: 30px;
+  width: 30px;
+  border-radius: 80%;
+  background: rgb(69, 69, 232);
+    background-color: rgb(69, 69, 232);
+  animation: pulse 1s ease-in-out infinite alternate;
+ }
+ .dot:nth-child(1){
+    animation-delay: -0.25s;
+ }
+ .dot:nth-child(2){
+    background-color: red;
+    animation-delay: -0.5s;
+ }
+ .dot:nth-child(3) {
+  background-color: rgb(233, 233, 63);
+  animation-delay: -0.75s;
+ }
+ .dot:nth-child(4){
+    background-color: green;
+    animation-delay: -0.25s;
+ }
+
+ @keyframes pulse{
+    0% {
+  transform: translateY(10px);
+}
+100% {
+  transform: translateY(-10px);
+}
+}
+
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 600px;
+    border: 2px solid;
+}
+ .square{
+  height: 100px;
+  width: 25px;
+  background-color: rgb(187, 103, 24);
+  animation: animate 1s ease-in-out infinite alternate;
+}
+.square:nth-child(1){
+    animation-delay: 0.5s;
+}
+.square:nth-child(2){
+    animation-delay: 1s;
+}
+.square:nth-child(3){
+    animation-delay: 1.5s;
+}
+
+@keyframes animate{
+    0%{
+        transform: scaleY(1.3);
+    }
+    100%{
+        transform: scaleY(-2.3);
+    }
+}

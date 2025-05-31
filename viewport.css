@@ -1,0 +1,74 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+    background-color: yellow;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Item Box */
+.item1 {
+    background-color: rgb(0, 255, 102);
+    border: 2px solid;
+    width: 60%;
+    max-width: 800px;
+    height: 200px;
+    /* transition: all 0.3s ease; */
+}
+
+/* ---------- Laptop View (1024px and up) ---------- */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .nav {
+        font-size: 1.4rem;
+        gap: 60px;
+    }
+
+    .item1 {
+        width: 50%;
+        height: 220px;
+    }
+}
+
+/* ---------- Tablet View (768px - 1023px) ---------- */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .item1 {
+        width: 70%;
+        height: 200px;
+    }
+}
+
+/* ---------- Mobile View (< 768px) ---------- */
+@media (max-width: 767px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        font-size: 1rem;
+    }
+
+    .item1 {
+        width: 90%;
+        height: auto;
+    }
+}

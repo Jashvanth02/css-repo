@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+     height: 400px; 
+    width: 400px;
+    border: 2px solid;
+}
+
+.item1 p{
+    background-color: yellowgreen;
+    padding: 10px;
+}
